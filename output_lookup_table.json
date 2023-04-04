@@ -1,0 +1,517 @@
+{
+  "lookup_table": [
+    {
+      "Color": [
+        0,
+        0,
+        0
+      ],
+      "Name": "No label",
+      "Short Name": "none"
+    },
+    {
+      "Color": [
+        188,
+        188,
+        137
+      ],
+      "Name": "Animal skin",
+      "Short Name": "hide"
+    },
+    {
+      "Color": [
+        0,
+        188,
+        0
+      ],
+      "Name": "Bone/teeth/horn",
+      "Short Name": "bone"
+    },
+    {
+      "Color": [
+        188,
+        188,
+        0
+      ],
+      "Name": "Brickwork",
+      "Short Name": "brick"
+    },
+    {
+      "Color": [
+        0,
+        0,
+        188
+      ],
+      "Name": "Cardboard",
+      "Short Name": "cardboard"
+    },
+    {
+      "Color": [
+        188,
+        0,
+        188
+      ],
+      "Name": "Carpet/rug",
+      "Short Name": "carpet"
+    },
+    {
+      "Color": [
+        0,
+        188,
+        188
+      ],
+      "Name": "Ceiling tile",
+      "Short Name": "ceilingtile"
+    },
+    {
+      "Color": [
+        241,
+        241,
+        241
+      ],
+      "Name": "Ceramic",
+      "Short Name": "ceramic"
+    },
+    {
+      "Color": [
+        0,
+        137,
+        137
+      ],
+      "Name": "Chalkboard/blackboard",
+      "Short Name": "chalkboard"
+    },
+    {
+      "Color": [
+        225,
+        0,
+        0
+      ],
+      "Name": "Clutter",
+      "Short Name": "clutter"
+    },
+    {
+      "Color": [
+        137,
+        188,
+        0
+      ],
+      "Name": "Concrete",
+      "Short Name": "concrete"
+    },
+    {
+      "Color": [
+        225,
+        188,
+        0
+      ],
+      "Name": "Cork/corkboard",
+      "Short Name": "cork"
+    },
+    {
+      "Color": [
+        137,
+        0,
+        188
+      ],
+      "Name": "Engineered stone",
+      "Short Name": "engineeredstone"
+    },
+    {
+      "Color": [
+        137,
+        188,
+        188
+      ],
+      "Name": "Fabric/cloth",
+      "Short Name": "fabric"
+    },
+    {
+      "Color": [
+        0,
+        225,
+        137
+      ],
+      "Name": "Fiberglass wool",
+      "Short Name": "fiberglass"
+    },
+    {
+      "Color": [
+        225,
+        188,
+        188
+      ],
+      "Name": "Fire",
+      "Short Name": "fire"
+    },
+    {
+      "Color": [
+        0,
+        137,
+        0
+      ],
+      "Name": "Foliage",
+      "Short Name": "foliage"
+    },
+    {
+      "Color": [
+        188,
+        137,
+        0
+      ],
+      "Name": "Food",
+      "Short Name": "food"
+    },
+    {
+      "Color": [
+        137,
+        225,
+        188
+      ],
+      "Name": "Fur",
+      "Short Name": "fur"
+    },
+    {
+      "Color": [
+        188,
+        137,
+        188
+      ],
+      "Name": "Gemstone/quartz",
+      "Short Name": "gemstone"
+    },
+    {
+      "Color": [
+        0,
+        137,
+        188
+      ],
+      "Name": "Glass",
+      "Short Name": "glass"
+    },
+    {
+      "Color": [
+        188,
+        225,
+        0
+      ],
+      "Name": "Hair",
+      "Short Name": "hair"
+    },
+    {
+      "Color": [
+        0,
+        225,
+        188
+      ],
+      "Name": "I cannot tell",
+      "Short Name": "icannottell"
+    },
+    {
+      "Color": [
+        188,
+        225,
+        188
+      ],
+      "Name": "Ice",
+      "Short Name": "ice"
+    },
+    {
+      "Color": [
+        137,
+        137,
+        0
+      ],
+      "Name": "Leather",
+      "Short Name": "leather"
+    },
+    {
+      "Color": [
+        225,
+        137,
+        0
+      ],
+      "Name": "Liquid, non-water",
+      "Short Name": "liquid"
+    },
+    {
+      "Color": [
+        137,
+        225,
+        0
+      ],
+      "Name": "Metal",
+      "Short Name": "metal"
+    },
+    {
+      "Color": [
+        225,
+        225,
+        0
+      ],
+      "Name": "Mirror",
+      "Short Name": "mirror"
+    },
+    {
+      "Color": [
+        137,
+        137,
+        188
+      ],
+      "Name": "Not on list",
+      "Short Name": "notonlist"
+    },
+    {
+      "Color": [
+        225,
+        137,
+        188
+      ],
+      "Name": "Paint/plaster/enamel",
+      "Short Name": "paint"
+    },
+    {
+      "Color": [
+        0,
+        225,
+        0
+      ],
+      "Name": "Paper",
+      "Short Name": "paper"
+    },
+    {
+      "Color": [
+        188,
+        0,
+        225
+      ],
+      "Name": "Pearl",
+      "Short Name": "pearl"
+    },
+    {
+      "Color": [
+        0,
+        0,
+        137
+      ],
+      "Name": "Photograph/painting",
+      "Short Name": "photograph"
+    },
+    {
+      "Color": [
+        188,
+        0,
+        0
+      ],
+      "Name": "Plastic, clear",
+      "Short Name": "clearplastic"
+    },
+    {
+      "Color": [
+        0,
+        188,
+        137
+      ],
+      "Name": "Plastic, non-clear",
+      "Short Name": "plastic"
+    },
+    {
+      "Color": [
+        188,
+        0,
+        137
+      ],
+      "Name": "Rubber/latex",
+      "Short Name": "rubber"
+    },
+    {
+      "Color": [
+        0,
+        0,
+        225
+      ],
+      "Name": "Sand",
+      "Short Name": "sand"
+    },
+    {
+      "Color": [
+        225,
+        188,
+        137
+      ],
+      "Name": "Skin/lips",
+      "Short Name": "skin"
+    },
+    {
+      "Color": [
+        0,
+        188,
+        225
+      ],
+      "Name": "Sky",
+      "Short Name": "sky"
+    },
+    {
+      "Color": [
+        188,
+        188,
+        225
+      ],
+      "Name": "Snow",
+      "Short Name": "snow"
+    },
+    {
+      "Color": [
+        137,
+        0,
+        137
+      ],
+      "Name": "Soap",
+      "Short Name": "soap"
+    },
+    {
+      "Color": [
+        225,
+        0,
+        137
+      ],
+      "Name": "Soil/mud",
+      "Short Name": "soil"
+    },
+    {
+      "Color": [
+        137,
+        188,
+        137
+      ],
+      "Name": "Sponge",
+      "Short Name": "sponge"
+    },
+    {
+      "Color": [
+        225,
+        225,
+        188
+      ],
+      "Name": "Stone, natural",
+      "Short Name": "stone"
+    },
+    {
+      "Color": [
+        137,
+        0,
+        225
+      ],
+      "Name": "Stone, polished",
+      "Short Name": "polishedstone"
+    },
+    {
+      "Color": [
+        225,
+        0,
+        225
+      ],
+      "Name": "Styrofoam",
+      "Short Name": "styrofoam"
+    },
+    {
+      "Color": [
+        137,
+        188,
+        225
+      ],
+      "Name": "Tile",
+      "Short Name": "tile"
+    },
+    {
+      "Color": [
+        225,
+        188,
+        225
+      ],
+      "Name": "Wallpaper",
+      "Short Name": "wallpaper"
+    },
+    {
+      "Color": [
+        0,
+        137,
+        225
+      ],
+      "Name": "Water",
+      "Short Name": "water"
+    },
+    {
+      "Color": [
+        188,
+        137,
+        137
+      ],
+      "Name": "Wax",
+      "Short Name": "wax"
+    },
+    {
+      "Color": [
+        188,
+        188,
+        188
+      ],
+      "Name": "Whiteboard",
+      "Short Name": "whiteboard"
+    },
+    {
+      "Color": [
+        188,
+        225,
+        137
+      ],
+      "Name": "Wicker",
+      "Short Name": "wicker"
+    },
+    {
+      "Color": [
+        137,
+        0,
+        0
+      ],
+      "Name": "Wood",
+      "Short Name": "wood"
+    },
+    {
+      "Color": [
+        188,
+        137,
+        225
+      ],
+      "Name": "Wood, tree",
+      "Short Name": "treewood"
+    },
+    {
+      "Color": [
+        0,
+        225,
+        225
+      ],
+      "Name": "Bad polygon",
+      "Short Name": "badpolygon"
+    },
+    {
+      "Color": [
+        188,
+        225,
+        225
+      ],
+      "Name": "Multiple materials",
+      "Short Name": "multiplematerials"
+    },
+    {
+      "Color": [
+        137,
+        137,
+        137
+      ],
+      "Name": "Asphalt",
+      "Short Name": "asphalt"
+    }
+  ]
+}
