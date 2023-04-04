@@ -21,12 +21,13 @@ import torch
 import math
 from PIL import Image
 
+
 random.seed(112)
 
 dms46 = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 23,
     24, 26, 27, 29, 30, 32, 33, 34, 35, 36, 37, 38, 39, 41, 43, 44, 46, 47, 48, 49,
     50, 51, 52, 53, 56, ]
-t = json.load(open(os.path.expanduser('./taxonomy.json'), 'rb'))
+t = json.load(open(os.path.expanduser('./imageSegmentation/taxonomy.json'), 'rb'))
 srgb_colormap = [
     t['srgb_colormap'][i] for i in range(len(t['srgb_colormap'])) if i in dms46
 ]
@@ -83,7 +84,7 @@ def main(args):
             (np.uint8(original_image), predicted_colored), axis=1
         )
         cv2.imwrite(
-            f'{args.output_folder}/{os.path.splitext(os.path.basename(image_path))[0]}.png',
+            f'{args.output_folder}/{os.path.splitext(os.path.basename(image_path))[0]}.jpg',
             stacked_img,
         )
 
@@ -110,3 +111,6 @@ if __name__ == '__main__':
     )
     args = parser.parse_args()
     main(args)
+
+
+    
