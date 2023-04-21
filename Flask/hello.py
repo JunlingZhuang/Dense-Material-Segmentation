@@ -25,8 +25,6 @@ def upload_file():
         file = request.files['file']
         if file:
          
-
-                    
             # 获取指定文件夹下的所有文件名
             filenames = os.listdir(app.config['SVIIMAGES_FOLDER'])
 
