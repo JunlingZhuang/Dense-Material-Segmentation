@@ -25,10 +25,10 @@ def upload_file():
         file = request.files['file']
         if file:
          
-            # 获取指定文件夹下的所有文件名
+            # Get the names of all files in the specified folder
             filenames = os.listdir(app.config['SVIIMAGES_FOLDER'])
 
-            # 使用正则表达式提取文件名中的数字部分，并将文件名按照数字部分进行排序
+            # Extracts the numeric part of a file name using a regular expression and sorts the file name by the numeric part
             pattern = re.compile(r'^(\d+)(\.[a-zA-Z]+)$')
             numbers = []
             for filename in filenames:
@@ -38,17 +38,17 @@ def upload_file():
                     numbers.append(number)
 
             if len(numbers) > 0:
-                # 对成功匹配的文件名进行排序，并计算新的数字部分
+                # Sort the names of successfully matched files and calculate the new numeric part
                 numbers_sorted = sorted(numbers)
                 new_number = numbers_sorted[-1] + 1
 
-                # 将数字部分和指定的后缀名（如.jpg）组合成新的文件名
+                # Combine the numeric part and the specified suffix (e.g. .jpg) into a new file name
                 new_filename = str(new_number) + ".jpg"
 
-                # 组合新文件名和目标文件夹路径，例如"/path/to/destination/600.jpg"
+                # Combine the new file name and destination folder path, for example"/path/to/destination/600.jpg"
                 file_path_SVI_new = os.path.join(app.config['SVIIMAGES_FOLDER'], new_filename)
 
-                # 打印新文件名和路径
+                # Combine the numeric part and the specified suffix (e.g. .jpg) into a new file name
                 print(new_filename)
 
 
@@ -67,14 +67,14 @@ def upload_file():
             file.save(file_path)
 
             # Store Orignial SVI image to frontend folder
-            file.seek(0)  # 将文件指针重新设置到文件开头
+            file.seek(0)  # Resetting the file pointer to the beginning of the file
             file.save(file_path_SVI)
 
 
            
             os.system("python ./imageSegmentation/inference.py --jit_path ./imageSegmentation/DMS46_v1.pt --image_folder ./imageSegmentation/input --output_folder ./imageSegmentation/output")
 
-            # 打开并裁剪图片的右半部分
+            # Open and crop the right half of the image
             image = Image.open(file_path_output)
             width, height = image.size
             cropped_image = image.crop((width // 2, 0, width, height))
@@ -83,12 +83,12 @@ def upload_file():
             # Store SVI Segementation image to frontend folder
             cropped_image.save(file_path_SVI_output)
 
-            # 将裁剪后的图片保存到内存中
+            # Save the cropped image to memory
             output = io.BytesIO()
             cropped_image.save(output, format='PNG')
             output.seek(0)
 
-            # 将裁剪后的图片发送回前端
+            # Send the cropped image back to the front end
             return send_file(output, mimetype='image/png')
         else:
             return {'status': 'error', 'message': 'No file uploaded'}

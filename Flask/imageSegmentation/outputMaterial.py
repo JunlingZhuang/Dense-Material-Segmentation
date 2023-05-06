@@ -134,7 +134,7 @@ def process_segmented_images_and_fill_to_csv(csv_path, segmented_images_dir,segm
         save_output_image(output_path, unique_colors, materials, materials_percent, lookup_table)
 
     # 保存csv文件
-    new_csv_path = '/Users/zhuangjunling/Documents/GitHub/GSAPP/Dense-Material-Segmentation/Flask/imageSegmentation/Data/Columbia_SVIpoints_4326_output.csv'
+    new_csv_path = '/Users/zhuangjunling/Documents/GitHub/GSAPP/Dense-Material-Segmentation/Flask/Data/Columbia_SVIpoints_4326_copy_output.csv'
     df.to_csv(new_csv_path, index=False)
 
 lookup_table_path = '/Users/zhuangjunling/Documents/GitHub/GSAPP/Dense-Material-Segmentation/Flask/imageSegmentation/output_lookup_table.json'
@@ -144,7 +144,7 @@ segmented_images_output = '/Users/zhuangjunling/Documents/GitHub/GSAPP/Dense-Mat
 
 segmented_images_dir = '/Users/zhuangjunling/Documents/GitHub/GSAPP/Dense-Material-Segmentation/Flask/imageSegmentation/testMaterialType'
 segmented_images = [f for f in os.listdir(segmented_images_dir) if f.endswith('.jpg') or f.endswith('.png')]
-csv_path = '/Users/zhuangjunling/Documents/GitHub/GSAPP/Dense-Material-Segmentation/Flask/imageSegmentation/Data/Columbia_SVIpoints_4326.csv'
+csv_path = '/Users/zhuangjunling/Documents/GitHub/GSAPP/Dense-Material-Segmentation/Flask/Data/Columbia_SVIpoints_4326_copy.csv'
 
 crop_and_replace_images(segmented_images_dir)
 
